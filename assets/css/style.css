@@ -65,9 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bloc {
-    padding: 450px 40px 20px 40px;
+    padding: 430px 40px 40px 40px;
     color: white;
-    text-align: center justify;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -92,30 +91,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bloc-mer {
-    background-image: url("/assets/img/block-mer.jpg");
+    background-image: url("assets/img/block-mer.jpg");
     background-color: #4069f0;
 }
 
-.bloc-mer:hover {
-    background-image: url("/assets/img/block-mer-hover.jpg");
-}
-
 .bloc-terre {
-    background-image: url("/assets/img/bloc-terre2.jpg");
+    background-image: url("assets/img/bloc-terre2.jpg");
     background-color: #2e9448;
 }
 
 .bloc-air {
-    background-image: url("/assets/img/bloc-air.jpg");
+    background-image: url("assets/img/bloc-air.jpg");
     background-color: #abf7fa;
 }
 
-.boc-air:hover {
-    background-image: url("/Site-Reunion-Broder/assets/img/bloc-air-hover.jpg");
+.bloc-air:hover {
+    background-image: url("assets/img/bloc-air-hover.jpg");
 }
 
 .bloc-feu {
-    background-image: url("/assets/img/bloc-feu2.jpg");
+    background-image: url("assets/img/bloc-feu2.jpg");
     background-color: rgb(253, 83, 31);
 }
 
