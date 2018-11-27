@@ -1,0 +1,139 @@
+/* Général */
+
+.logo {
+    height: 115px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Menu */
+
+.nav {
+    display: table;
+}
+
+.nav-item {
+    display: table-cell;
+    vertical-align: center;
+    max-block-size: 100%
+    padding: 0 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-link {
+    font-size: 22px;    
+}
+
+.nav-link:hover {
+    background-image: url(/assets/img/logo-sans-texte.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Video Header */
+
+.video-container {
+    padding: 0;
+}
+
+.video-header {
+    max-width: 100%;
+}
+
+/* Thématique */
+
+.thematique {
+    padding: 30px 0 0;
+}
+
+.thematique h3 {
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.thematique .description {
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 40px;
+}
+
+.bloc-container {
+    padding: 0;
+}
+
+.bloc {
+    padding: 450px 40px 20px 40px;
+    color: white;
+    text-align: center justify;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.bloc:hover {
+    top: -5px;
+    background-blend-mode: multiply;
+}
+
+.bloc h4 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.bloc p {
+    font-size: 20px;
+}
+
+.bloc-mer {
+    background-image: url("/assets/img/block-mer.jpg");
+    background-color: #4069f0;
+}
+
+.bloc-mer:hover {
+    background-image: url("/assets/img/block-mer-hover.jpg");
+}
+
+.bloc-terre {
+    background-image: url("/assets/img/bloc-terre2.jpg");
+    background-color: #2e9448;
+}
+
+.bloc-air {
+    background-image: url("/assets/img/bloc-air.jpg");
+    background-color: #abf7fa;
+}
+
+.boc-air:hover {
+    background-image: url("/Site-Reunion-Broder/assets/img/bloc-air-hover.jpg");
+}
+
+.bloc-feu {
+    background-image: url("/assets/img/bloc-feu2.jpg");
+    background-color: rgb(253, 83, 31);
+}
+
+/* Carte */
+
+.carte {
+    background-image: url("/assets/img/worldmap.png");
+}
+
+.carte-container {
+    padding: 250px 0;
+    background-position: center;
+    background-color: #000000
+    background-size: 100% auto;
+}
+
+.recherche-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
