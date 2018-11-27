@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bloc {
-    padding: 430px 40px 40px 40px;
+    padding: 40px;
+    height: 640px;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     transition: all 0.2s ease-in-out;
@@ -74,11 +75,16 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     background-position: center center;
     background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .bloc:hover {
-    top: -5px;
+    transform: scale(1.05);
+    z-index: 2;
     background-blend-mode: multiply;
+
 }
 
 .bloc h4 {
@@ -103,10 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 .bloc-air {
     background-image: url("../img/bloc-air.jpg");
     background-color: #abf7fa;
-}
-
-.bloc-air:hover {
-    background-image: url("../img/bloc-air-hover.jpg");
 }
 
 .bloc-feu {
