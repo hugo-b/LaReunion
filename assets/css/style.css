@@ -91,33 +91,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bloc-mer {
-    background-image: url("assets/img/block-mer.jpg");
+    background-image: url("../img/block-mer.jpg");
     background-color: #4069f0;
 }
 
 .bloc-terre {
-    background-image: url("assets/img/bloc-terre2.jpg");
+    background-image: url("../img/bloc-terre2.jpg");
     background-color: #2e9448;
 }
 
 .bloc-air {
-    background-image: url("assets/img/bloc-air.jpg");
+    background-image: url("../img/bloc-air.jpg");
     background-color: #abf7fa;
 }
 
 .bloc-air:hover {
-    background-image: url("assets/img/bloc-air-hover.jpg");
+    background-image: url("../img/bloc-air-hover.jpg");
 }
 
 .bloc-feu {
-    background-image: url("assets/img/bloc-feu2.jpg");
+    background-image: url("../img/bloc-feu2.jpg");
     background-color: rgb(253, 83, 31);
 }
 
 /* Carte */
 
 .carte {
-    background-image: url("/assets/img/worldmap.png");
+    background-image: url("../img/worldmap.png");
 }
 
 .carte-container {
