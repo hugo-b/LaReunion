@@ -7,6 +7,7 @@
     <title>Bienvenue sur le site officiel de la Réunion</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
@@ -137,21 +138,86 @@
                     </div>
                 </div>
                 <div class="col-5 offset-1">
-                    <img src="assets/img/worldmap.png" alt="carte du monde" data-aos="zoom-out">
+                    <img src="assets/img/worldmap.png" alt="carte du monde" class="img-fluid" data-aos="zoom-out">
                 </div>
             </div>
         </div>
-        <div class="articles">
-
+        <div class="articles container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center" data-aos="fade-up">En ce moment...</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/bloc-air.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/bloc-air.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/bloc-air.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer></footer>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 image-container">
+                    <img src="assets/img/logo-horizontal.png" alt="logo réunion" class="img-fluid">
+                </div>
+                <div class="col-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, a! Explicabo molestias nobis quam iste asperiores distinctio praesentium! Nesciunt, incidunt iure. Reprehenderit similique officiis accusantium eos quaerat ea distinctio asperiores?</p>
+                </div>
+                <div class="col-3 offset-3">
+                    <div class="form-group">
+                        <label for="newsletter">Newsletter</label>
+                        <input type="email" class="form-control" id="newsletter" placeholder="Votre email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">M'abonnez</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="r-sociaux-container">
+                        <a href="#" class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        $(function() {
+            AOS.init();
+        });
     </script>
 </body>
 </html>
