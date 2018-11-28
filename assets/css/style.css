@@ -96,7 +96,7 @@ h3 {
 
 .bloc-mer {
     background-image: url("../img/block-mer.jpg");
-    background-color: #4069f0;
+    background-color: #3c7bda;
 }
 
 .bloc-terre {
@@ -106,7 +106,7 @@ h3 {
 
 .bloc-air {
     background-image: url("../img/bloc-air.jpg");
-    background-color: #abf7fa;
+    background-color: #88e3f3;
 }
 
 .bloc-feu {
@@ -144,6 +144,26 @@ h3 {
     margin: 0;
 }
 
+.btn-primary1 {
+    background-color: rgb(99, 164, 238);
+}
+
+.btn-primary2 {
+    background-color: rgb(167, 40, 99);
+}
+
+.btn-primary3 {
+    background-color: rgb(228, 181, 28);
+}
+
+.btn-primary4 {
+    background-color: rgb(151, 151, 151);
+}
+
+.btn-primary a {
+    color: rgb(255, 255, 255);
+}
+
 /* Pied de page */
 
 footer {
@@ -168,3 +188,25 @@ footer .icon {
     color: #dadada;
     margin-right: 10px;
 }
+
+
+/*MEDIA QUERIES
+----------------
+@media handheld and (max-width: 768px), screen and (max-device-width: 768px), screen and (max-width: 768px) { 
+
+body {
+    margin: 0;
+}
+#mapcran {
+    display: none;
+}
+
+#maptablette {
+    display: block;
+}
+
+chercher media queries sur alsa cretions
+
+++ / dans html <meta name"viewport" content="width=device-width, initial-scale=1.0,
+                shrink-to-fit=no">
+    */
