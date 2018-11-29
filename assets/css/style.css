@@ -54,7 +54,7 @@ h3 {
 .thematique .description {
     font-size: 1.3em;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 .bloc-container {
@@ -133,10 +133,21 @@ h3 {
     box-shadow:  0 2px 15px rgba(79, 149, 240, 0.5);
 }
 
+/*à voir avec guigui*/
+.col-5.offset-1 {
+    padding-top: 25px;
+}
+
 /* Actualité */
 
 .articles {
     padding: 0 0 120px 0;
+}
+
+.articles .card:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    background-blend-mode: multiply;
 }
 
 .articles h3 {
@@ -144,25 +155,64 @@ h3 {
     margin: 0;
 }
 
-.btn {
-    color: #ffffff
+.articles.container {
+    max-width: 1500px;
 }
 
+.articles .card {
+    margin: 0 23px;
+    transition: transform .2s ease-in-out;
+}
+
+.btn {
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #ffffff00;
+}
+/*
+.btn-primarycarte {
+    background-image: url("../img/background-button.png");
+  /*  border: 2px solid rgb(160, 24, 76);}*/
+
+/*
+.btn-primarycarte:hover {
+    color:rgb(rgba(255, 255, 255, 0));
+    border: 2px solid rgb(160, 24, 76);
+    background-blend-mode: luminosity;
+}
+*/
 .btn-primary1 {
     background-color: rgb(99, 164, 238);
-    : rgb(255, 255, 255);
+    border: 2px solid rgb(99, 164, 238);
+}
+
+.btn-primary1:hover {
+    color:rgb(99, 164, 238);
 }
 
 .btn-primary2 {
     background-color: rgb(167, 40, 99);
+    border: 2px solid rgb(167, 40, 99);
+}
+
+.btn-primary2:hover {
+    color:rgb(167, 40, 99);
 }
 
 .btn-primary3 {
     background-color: rgb(228, 181, 28);
+    border: 2px solid rgb(228, 181, 28);
+}
+
+.btn-primary3:hover {
+    color:rgb(228, 181, 28);
 }
 
 .btn-primary4 {
     background-color: rgb(151, 151, 151);
+    border: 2px solid rgb(151, 151, 151);
 }
 
 /* Pied de page */
@@ -206,7 +256,7 @@ body {
     display: block;
 }
 
-chercher media queries sur alsa cretions
+chercher media queries sur alsa creations
 
 ++ / dans html <meta name"viewport" content="width=device-width, initial-scale=1.0,
                 shrink-to-fit=no">
