@@ -20,34 +20,42 @@
     <!-- 4. Entrer "browser-sync start --server --files "*.html" "assets/css/**/*.css" " -->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-sticky-top navbar-light bg-light main-nav">
-            <ul class="nav navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Activité</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pratiques</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="assets/img/logo.png" alt="L'ile de la réunion" class="logo">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Actualités</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallerie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="/" class="nav-logo-mobile">
+                <img src="assets/img/logo-sans-texte.png" alt="L'ile de la réunion">
+            </a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-accueil" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-activite" href="#">Activité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pratiques" href="#">Pratiques</a>
+                    </li>
+                    <li class="nav-item nav-logo">
+                        <a class="nav-link" href="/">
+                            <img src="assets/img/logo.png" alt="L'ile de la réunion" class="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-actus" href="#">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-gallerie" href="#">Gallerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-contact" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
-    <div class="container-fluid">
+    <div class="contenu container-fluid">
         <div class="video">
             <div class="row">
                 <div class="col-12 video-container">
@@ -71,26 +79,26 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 bloc-container">
+                <div class="col-12 col-md-6 col-lg-3 bloc-container">
                     <div class="bloc bloc-mer">
                         <h4>Eau</h4>
                         <p>Partez à la découverte de nos plus belles plages, et profitez de nos nombreuses activités nautiques, sous-marines, ...</p>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 bloc-container">
+                <div class="col-12 col-md-6 col-lg-3 bloc-container">
                     <div class="bloc bloc-terre">
                         <h4>Terre</h4>
                         <p>Nos montagnes offrent de nombreuses randonnées permettant d'accéder à des vues sublimes, des temples majestueux, ...</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 bloc-container">
+                <div class="col-12 col-md-6 col-lg-3 bloc-container">
                     <div class="bloc bloc-feu">
                         <h4>Feu</h4>
                         <p>Réputée dans le monde entier pour son activité volcanique, visites touristiques de l'impressionant Piton de la Fournaise, ...</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 bloc-container">
+                <div class="col-12 col-md-6 col-lg-3 bloc-container">
                     <div class="bloc bloc-air">
                         <h4>Air</h4>
                         <p>Visitez l'île par la voie des airs offre une expérience unique, que ce soit en hélicoptère, hydravion, ou montgolfière, ...</p>
@@ -105,7 +113,7 @@
                 </div>
             </div>
             <div class="row carte-container">
-                <div class="col-4 offset-1">
+                <div class="col-12 col-lg-5 offset-lg-1 carte-form">
                     <div class="recherche-container" data-aos="fade-up">
                         <h4>Rechercher un vol ou un hébergement</h4>
 
@@ -134,10 +142,10 @@
                             <input type="number" class="form-control" id="voyageurs" min="1" max="10" value="1">
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Rechercher</button>
+                        <button type="submit" class="btn btn-primary-carte">Rechercher</button>
                     </div>
                 </div>
-                <div class="col-5 offset-1">
+                <div class="col-12 col-lg-6 carte-img">
                     <img src="assets/img/worldmap.png" alt="carte du monde" class="img-fluid" data-aos="zoom-out">
                 </div>
             </div>
@@ -149,7 +157,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4 article">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/marchee-fruit.png" alt="Card image cap">
                         <div class="card-body">
@@ -160,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 article">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/feu-artifice.png" alt="Card image cap">
                         <div class="card-body">
@@ -171,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4 article">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/marche-sur-le-feu-reunion.png" alt="Card image cap">
                         <div class="card-body">
@@ -184,38 +192,138 @@
                 </div>
             </div>
         </div>
+        <div class="agenda container">
+            <div class="row">
+                <div class="col-12 text-wrap">
+                    <h3 class="text-center" data-aos="fade-up">Prochainement sur l'île ...</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card-evenement">                        
+                        <div class="card card-date text-center">
+                            <div class="card-body">
+                                <p class="card-annee no-margin">2019</p>
+                                <h2 class="no-margin">15</h2>
+                                <p class="card-mois no-margin">Janvier</p>
+                            </div>
+                        </div>
+                        <div class="card card-text">
+                            <div class="card-body">
+                                <h5 class="card-title">Karabachois <span class="badge badge-concert">CONCERT</span></h5>
+                                <p class="card-text">Tous les 4èmes samedis du mois, le Kabarachois met la culture kréol en lèr ! 
+                                    Retrouvez ou découvrez des artistes locaux pleins de talent : séga, maloya, fonnkèr, humour, tout les ingrédients sont réunis ! </p>
+                                <a href="#" class="btn btn-primary-concert">Voir +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card-evenement">                        
+                        <div class="card card-date-marchee text-center">
+                            <div class="card-body">
+                                <p class="card-annee no-margin">2019</p>
+                                <h2 class="no-margin">1-31</h2>
+                                <p class="card-mois no-margin">Février</p>
+                            </div>
+                        </div>
+                        <div class="card card-text">
+                            <div class="card-body">
+                                <h5 class="card-title">Marché du Chaudron à Saint-Denis  <span class="badge badge-marchee">MARCHÉE</span></h5>
+                                <p class="card-text">Le marché du Chaudron a lieu 2 fois par semaine le mercredi et le dimanche matin de 6h à 12h, à côté du Jumbo Score, vers l'église du Chaudron.</p>
+                                <a href="#" class="btn btn-primary-marchee">Voir +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card-evenement">                        
+                        <div class="card card-date-exposition text-center">
+                            <div class="card-body">
+                                <p class="card-annee no-margin">2019</p>
+                                <h2 class="no-margin">6-21</h2>
+                                <p class="card-mois no-margin">Mars</p>
+                            </div>
+                        </div>
+                        <div class="card card-text">
+                            <div class="card-body">
+                                <h5 class="card-title">Portré Tabisman <span class="badge badge-exposition">EXPOSITION</span></h5>
+                                <p class="card-text">Un visage, un vécu, une histoire ... voilà ce que cette exposition nous révèle, le visage de l'humanité réunionnaise, une identité sociale, économique et culturelle.</p>
+                                <a href="#" class="btn btn-primary-exposition">Voir +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card-evenement">                        
+                        <div class="card card-date-spectacle text-center">
+                            <div class="card-body">
+                                <p class="card-annee no-margin">2019</p>
+                                <h2 class="no-margin">4</h2>
+                                <p class="card-mois no-margin">Avril</p>
+                            </div>
+                        </div>
+                        <div class="card card-text">
+                            <div class="card-body">
+                                <h5 class="card-title">Messmer Hypersensoriel <span class="badge badge-spectacle">SPECTACLE</span></h5>
+                                <p class="card-text">Le fascinateur Messmer est l'une des grandes références en hypnose et magnétisme à travers le monde.</p>
+                                <a href="#" class="btn btn-primary-spectacle">Voir +</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
+    <footer class="pied">
         <div class="container">
             <div class="row">
-                <div class="col-3 image-container">
-                    <img src="assets/img/logo-horizontal.png" alt="logo réunion" class="img-fluid">
+                <div class="col-12 col-md-3 image-container">
+                    <a href="/"><img src="assets/img/logo-horizontal.png" alt="logo réunion" class="img-fluid"></a>
                     <div class="r-sociaux-container">
-                        <a href="#" class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#" class="icon">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
                         <a href="#" class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         <a href="#" class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="col-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, a! Explicabo molestias nobis quam iste asperiores distinctio praesentium! Nesciunt, incidunt iure. Reprehenderit similique officiis accusantium eos quaerat ea distinctio asperiores?</p>
+                <div class="col-12 col-md-3">
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-lien">Qui sommes-nous ?</a></li>
+                        <li><a href="#" class="footer-lien">Crédits</a></li>
+                        <li><a href="#" class="footer-lien">Mentions légales</a></li>
+                        <li><a href="#" class="footer-lien">Partenaires</a></li>
+                        <li><a href="#" class="footer-lien">Espace pro</a></li>
+                        <li><a href="#" class="footer-lien">Politique de confidentialité</a></li>
+                    </ul>
                 </div>
-                <div class="col-3 offset-3">
+                <div class="col-12 col-md-3 offset-md-3">
                     <div class="form-group">
                         <label for="newsletter">Newsletter</label>
                         <input type="email" class="form-control" id="newsletter" placeholder="Votre email">
                     </div>
-                    <button type="submit" class="btn btn-primary4">M'abonnez</button>
+                    <button type="submit" class="btn btn-primary4">M'abonner</button>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <a href="#" class="btn btn-primary btn-up remonte"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         $(function() {
             AOS.init();
+
+            $('.btn-up').click(function (e) {
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: 0 });
+            })
         });
     </script>
 </body>

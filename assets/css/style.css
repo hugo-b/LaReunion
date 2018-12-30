@@ -4,13 +4,13 @@
     height: 115px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', sans-serif;
+body {
+    /* font-family: , sans-serif; */
 }
 
-h3 {
-    margin-bottom: 30px;
-    font-size: 70px;
+h1, h2, h3, h4, h5, h6, .description, .nav-item {
+    font-family: 'Quicksand', sans-serif;
+    word-wrap: break-word;
 }
 
 /* Menu */
@@ -18,21 +18,62 @@ h3 {
 .nav-item {
     max-block-size: 100%;
     text-align: center;
-    padding: 0 10px;
-    font-family: 'Quicksand', sans-serif;
+    padding: 0;
     display: flex;
     align-self: center;
 }
 
 .nav-link {
-    font-size: 22px;    
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 3px solid #f8f9fa;
+    transition: .2s ease-in-out border-color;
 }
 
-.nav-link:hover {
-    background-image: url(../img/logo-sans-texte.png);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
+.active .nav-accueil,
+.nav-accueil:hover {
+    border-color: #f9b428;
+}
+
+.active .nav-activite,
+.nav-activite:hover {
+    border-color: #982d47;
+}
+
+.active .nav-pratiques,
+.nav-pratiques:hover {
+    border-color: #abb018;
+}
+
+.nav-logo {
+    display: none;
+}
+
+.nav-logo img {
+    transition: .2s ease-in transform;
+}
+
+.nav-logo:hover img {
+    transform: scale(1.15);
+}
+
+.nav-logo-mobile img {
+    height: 50px;
+}
+
+.active .nav-actus,
+.nav-actus:hover {
+    border-color: #abb018;
+}
+
+.active .nav-gallerie,
+.nav-gallerie:hover {
+    border-color: #50c1e1;
+}
+
+.active .nav-contact,
+.nav-contact:hover {
+    border-color: #f9b428;
 }
 
 /* Video Header */
@@ -53,7 +94,6 @@ h3 {
 
 .thematique .description {
     font-size: 1.3em;
-    font-family: 'Quicksand', sans-serif;
     margin-bottom: 55px;
 }
 
@@ -122,8 +162,18 @@ h3 {
 }
 
 .carte-container {
-    padding: 100px;
     background-image: url("../img/just-waves.png");
+}
+
+.carte-form {
+    margin-top: 50px;
+}
+
+.carte-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .recherche-container {
@@ -133,15 +183,14 @@ h3 {
     box-shadow:  0 2px 15px rgba(79, 149, 240, 0.5);
 }
 
-/*à voir avec guigui*/
-.col-5.offset-1 {
-    padding-top: 25px;
-}
-
 /* Actualité */
 
 .articles {
-    padding: 0 0 120px 0;
+    padding: 0 0 65px 0;
+}
+
+.article {
+    margin-bottom: 50px;
 }
 
 .articles .card:hover {
@@ -171,18 +220,16 @@ h3 {
 .btn:hover {
     background-color: #ffffff00;
 }
-/*
-.btn-primarycarte {
-    background-image: url("../img/background-button.png");
-  /*  border: 2px solid rgb(160, 24, 76);}*/
 
-/*
-.btn-primarycarte:hover {
-    color:rgb(rgba(255, 255, 255, 0));
-    border: 2px solid rgb(160, 24, 76);
-    background-blend-mode: luminosity;
+.btn-primary-carte {
+    background-color: rgb(99, 164, 238);
+    border: 2px solid rgb(99, 164, 238);
 }
-*/
+
+.btn-primary-carte:hover {
+    color:rgb(99, 164, 238);
+}
+
 .btn-primary1 {
     background-color: rgb(99, 164, 238);
     border: 2px solid rgb(99, 164, 238);
@@ -211,8 +258,148 @@ h3 {
 }
 
 .btn-primary4 {
-    background-color: rgb(151, 151, 151);
-    border: 2px solid rgb(151, 151, 151);
+    background-color: rgb(109, 109, 109);
+    border: 2px solid rgb(109, 109, 109);
+}
+
+/* AGENDA */
+
+.agenda {
+    margin-bottom: 50px;
+}
+
+.agenda.container {
+    max-width: 1500px;
+}
+
+.agenda h3 {
+    margin-bottom: 50px;
+}
+
+.card-evenement {
+    display: flex;
+    margin-bottom: 30px;
+    transition: .1s ease-in transform;
+}
+
+.card-annee, .card-mois {
+    font-size: 20px;
+}
+
+.card-evenement:hover {
+    transform: scale(1.05);
+}
+
+.card-evenement .card {
+    min-width: 50%;
+}
+
+.card-evenement .card-body {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-evenement .card-date {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    background-image: url("/assets/img/fond-event-concert.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.card-evenement .card-date-marchee {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    background-image: url("/assets/img/fond-event-marchee.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.card-evenement .card-date-exposition {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    background-image: url("/assets/img/fond-event-exposition.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.card-evenement .card-date-spectacle {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    background-image: url("/assets/img/fond-event-spectacle.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+.card-evenement .card-text {
+    border-radius: 0 5px 5px 0;
+}
+
+.card-evenement h2 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.btn-primary-concert {
+    background-color: rgb(228, 181, 28);
+    border: 2px solid rgb(228, 181, 28);
+}
+
+.btn-primary-concert:hover {
+    color:rgb(228, 181, 28);
+}
+
+.badge-concert {
+    background-color: rgb(228, 181, 28);
+    color: white;
+}
+
+.btn-primary-marchee {
+    background-color: rgb(99, 164, 238);
+    border: 2px solid rgb(99, 164, 238);
+}
+
+.btn-primary-marchee:hover {
+    color:rgb(99, 164, 238);
+}
+
+.badge-marchee {
+    background-color: rgb(99, 164, 238);
+    color: white;
+}
+
+.btn-primary-exposition {
+    background-color: rgb(111, 46, 128);
+    border: 2px solid rgb(111, 46, 128);
+}
+
+.btn-primary-exposition:hover {
+    color:rgb(111, 46, 128);
+}
+
+.badge-exposition {
+    background-color:rgb(111, 46, 128);
+    color: white;
+}
+
+.btn-primary-spectacle {
+    background-color: rgb(158, 34, 34);
+    border: 2px solid rgb(158, 34, 34);
+}
+
+.btn-primary-spectacle:hover {
+    color:rgb(158, 34, 34);
+}
+
+.badge-spectacle {
+    background-color: rgb(158, 34, 34);
+    color: white;
 }
 
 /* Pied de page */
@@ -220,7 +407,7 @@ h3 {
 footer {
     background-color: #333333;
     color: #dadada;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .image-container {
@@ -236,8 +423,107 @@ footer {
 
 footer .icon {
     font-size: 30px;
-    color: #dadada;
+    color: #ffffff;
     margin-right: 10px;
+    text-decoration: none;
+}
+
+.fa-facebook-official:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-lien {
+    color: #ffffff;
+}
+
+.footer-lien:hover {
+    color: rgb(231, 186, 39);
+    text-decoration:none ;
+}
+
+/* Autres */
+
+.btn-up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.btn-up:hover {
+    background-color: #fff;
+    color: #333333;
+    border-color: #333333;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/* Responsive */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .nav-logo {
+        display: block;
+    }
+
+    .nav-logo-mobile {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carte-form {
+        margin-bottom: 50px;
+    }
+
+    .article {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-bottom: 30px;
+        font-size: 70px;
+    }
+
+    .nav-item {
+        padding: 0 10px;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
 
 
