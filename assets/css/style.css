@@ -1,11 +1,11 @@
 /* Général */
 
-.logo {
-    height: 115px;
+html {
+    scroll-behavior: smooth;
 }
 
-body {
-    /* font-family: , sans-serif; */
+.logo {
+    height: 115px;
 }
 
 h1, h2, h3, h4, h5, h6, .description, .nav-item {
@@ -463,6 +463,7 @@ footer .icon {
     bottom: 30px;
     background-color: #333333;
     border-color: #333333;
+    z-index: 999999;
 }
 
 .btn-up:hover {
